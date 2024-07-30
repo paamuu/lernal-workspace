@@ -1,0 +1,36 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "pamu <pamu1976@outlook.com>",
+  "homepage": "https://github.com/paamuu/lernal-workspace#readme",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paamuu/lernal-workspace.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/core.test.js",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/paamuu/lernal-workspace/issues"
+  },
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^22.0.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

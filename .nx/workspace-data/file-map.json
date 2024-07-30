@@ -1,0 +1,69 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.3",
+  "deps": {
+    "lerna": "^8.1.7"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".idea/modules.xml",
+        "hash": "12247884976935018115"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "13076890194361308264"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1921754567074770008"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "10307142885639291195"
+      },
+      {
+        "file": "package.json",
+        "hash": "11075803045648175709"
+      },
+      {
+        "file": ".idea/lernal-workspace.iml",
+        "hash": "17628044544001142833"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "9532903880240700590"
+      },
+      {
+        "file": ".idea/.gitignore",
+        "hash": "16259663310133185705"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14061007159709904339"
+      }
+    ],
+    "projectFileMap": {
+      "core": [
+        {
+          "file": "packages/core/README.md",
+          "hash": "2036648944611965453"
+        },
+        {
+          "file": "packages/core/__tests__/core.test.js",
+          "hash": "7391047460588061806"
+        },
+        {
+          "file": "packages/core/lib/core.js",
+          "hash": "14930189343183403810"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "6840609263339818220"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node18",
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.test", "**/*.test.ts", "node_modules", "dist"]
+}
