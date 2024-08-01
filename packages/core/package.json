@@ -1,12 +1,14 @@
 {
-  "name": "core",
+  "name": "@muilk/core",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "pamu <pamu1976@outlook.com>",
   "homepage": "https://github.com/paamuu/lernal-workspace#readme",
   "license": "ISC",
   "main": "lib/core.js",
-  "bin": "dist/index.js",
+  "bin": {
+    "muilk": "dist/index.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
