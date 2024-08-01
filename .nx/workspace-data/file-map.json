@@ -13,28 +13,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna.json",
-        "hash": "14590667493148740324"
+        "file": ".eslintrc.json",
+        "hash": "13037408980409789380"
       },
       {
-        "file": "package-lock.json",
-        "hash": "15726414877363018185"
+        "file": ".gitignore",
+        "hash": "14061007159709904339"
       },
       {
         "file": ".idea/.gitignore",
         "hash": "16259663310133185705"
       },
       {
+        "file": ".idea/codeStyles/Project.xml",
+        "hash": "14423246663918276097"
+      },
+      {
+        "file": ".idea/codeStyles/codeStyleConfig.xml",
+        "hash": "10911911431176787330"
+      },
+      {
+        "file": ".idea/lernal-workspace.iml",
+        "hash": "17628044544001142833"
+      },
+      {
         "file": ".idea/modules.xml",
         "hash": "12247884976935018115"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "13076890194361308264"
       },
       {
         "file": ".prettierrc",
         "hash": "17480849812520633929"
       },
       {
-        "file": ".idea/codeStyles/codeStyleConfig.xml",
-        "hash": "10911911431176787330"
+        "file": "lerna.json",
+        "hash": "14262555260835661391"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2207265364265835451"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "9503537405187402927"
+      },
+      {
+        "file": "package.json",
+        "hash": "768452668542081824"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "9833307382743509732"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -43,38 +75,6 @@
       {
         "file": "tsconfig.json",
         "hash": "10449626160885366826"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14061007159709904339"
-      },
-      {
-        "file": ".idea/codeStyles/Project.xml",
-        "hash": "14423246663918276097"
-      },
-      {
-        "file": "package.json",
-        "hash": "768452668542081824"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "13037408980409789380"
-      },
-      {
-        "file": ".idea/vcs.xml",
-        "hash": "13076890194361308264"
-      },
-      {
-        "file": "nx.json",
-        "hash": "2207265364265835451"
-      },
-      {
-        "file": ".idea/lernal-workspace.iml",
-        "hash": "17628044544001142833"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "9833307382743509732"
       }
     ],
     "projectFileMap": {
@@ -89,7 +89,7 @@
         },
         {
           "file": "packages/core/package.json",
-          "hash": "5331730819542787816",
+          "hash": "18413973673082880930",
           "deps": [
             "npm:@tsconfig/node18",
             "npm:@types/node",
