@@ -13,16 +13,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "15068071380531678201"
-      },
-      {
-        "file": ".idea/codeStyles/codeStyleConfig.xml",
-        "hash": "10911911431176787330"
-      },
-      {
         "file": "lerna.json",
-        "hash": "2534455776153795179"
+        "hash": "14590667493148740324"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15726414877363018185"
       },
       {
         "file": ".idea/.gitignore",
@@ -33,24 +29,20 @@
         "hash": "12247884976935018115"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "9833307382743509732"
-      },
-      {
         "file": ".prettierrc",
         "hash": "17480849812520633929"
       },
       {
-        "file": ".idea/vcs.xml",
-        "hash": "13076890194361308264"
+        "file": ".idea/codeStyles/codeStyleConfig.xml",
+        "hash": "10911911431176787330"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "15068071380531678201"
       },
       {
         "file": "tsconfig.json",
         "hash": "10449626160885366826"
-      },
-      {
-        "file": "nx.json",
-        "hash": "2207265364265835451"
       },
       {
         "file": ".gitignore",
@@ -61,20 +53,28 @@
         "hash": "14423246663918276097"
       },
       {
-        "file": ".idea/lernal-workspace.iml",
-        "hash": "17628044544001142833"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "15726414877363018185"
-      },
-      {
         "file": "package.json",
         "hash": "768452668542081824"
       },
       {
         "file": ".eslintrc.json",
         "hash": "13037408980409789380"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "13076890194361308264"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2207265364265835451"
+      },
+      {
+        "file": ".idea/lernal-workspace.iml",
+        "hash": "17628044544001142833"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "9833307382743509732"
       }
     ],
     "projectFileMap": {
@@ -89,7 +89,7 @@
         },
         {
           "file": "packages/core/package.json",
-          "hash": "14069452333646445899",
+          "hash": "5331730819542787816",
           "deps": [
             "npm:@tsconfig/node18",
             "npm:@types/node",
