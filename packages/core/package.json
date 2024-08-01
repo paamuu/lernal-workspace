@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "lib/core.js",
   "bin": {
-    "muilk": "dist/index.js"
+    "muilk": "dist/src/index.js"
   },
   "directories": {
     "lib": "lib",
