@@ -5,7 +5,7 @@ import { readdirSync } from 'node:fs';
 
 const program = new Command();
 
-//  动态获取其他的内容来添加
+//  动态获取其他的内容来添加test
 function register() {
   const pluginPath = path.resolve(__dirname, '../plugins');
   const files = readdirSync(pluginPath);
