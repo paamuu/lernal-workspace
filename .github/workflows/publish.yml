@@ -25,9 +25,8 @@ jobs:
 
       - name: lerna 构建
         run: npx lerna run build --stream
-
       - name: 发布
-        run: npx lerna publish from-package --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx lerna publish from-package --yes
 
