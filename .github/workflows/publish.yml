@@ -20,11 +20,6 @@ jobs:
       - name: 全局安装pnpm
         run: npm install -g pnpm
 
-      - name: NPM Setup
-        run: |
-          npm set registry "https://registry.npmjs.org/"
-          npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
-
       - name: 安装依赖
         run: pnpm install
 
