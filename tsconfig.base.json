@@ -10,12 +10,14 @@
     "types": [
       "node",
       "jest"
-    ]
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "ts-node": {
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "packages/*/node_modules/*"
+      ]
+    }
   },
   "exclude": [
     "**/*.spec.test",

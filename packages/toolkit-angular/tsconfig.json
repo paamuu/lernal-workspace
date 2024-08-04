@@ -1,24 +1,6 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "module": "commonjs",
-    "target": "ES2021",
-    "skipLibCheck": true,
-    "sourceMap": false,
-    "strict": true,
-    "outDir": "dist",
-    "useUnknownInCatchVariables": false,
-    "types": [
-      "node"
-    ]
-  },
+  "extends": "../../tsconfig.base.json",
   "include": [
-    "lib"
-  ],
-  "exclude": [
-    "**/*.spec.test",
-    "**/*.test.ts",
-    "node_modules",
-    "dist"
+    "lib",
   ]
 }

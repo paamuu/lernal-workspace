@@ -14,13 +14,14 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: 设置Node.js版本
-        uses: actions/checkout@v4
+        uses: actions/setup-node@v4
         with:
           node-version: '18.12.0'
+      - name: 全局安装pnpm
+        run: npm install -g pnpm
+
       - name: 安装依赖
-        run: npm install
-      - name: Bootstrap Lerna
-        run: npx lerna bootstrap
+        run: pnpm install
 
       - name: lerna 构建
         run: npx lerna run build --stream
