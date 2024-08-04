@@ -8,16 +8,9 @@
     "strict": true,
     "useUnknownInCatchVariables": false,
     "types": [
-      "node",
-      "jest"
+      "node"
     ],
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "node_modules/*",
-        "packages/*/node_modules/*"
-      ]
-    }
+    "baseUrl": "."
   },
   "exclude": [
     "**/*.spec.test",

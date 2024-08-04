@@ -1,5 +1,88 @@
 {
   "nodes": {
+    "@muilk/toolkit-angular": {
+      "name": "@muilk/toolkit-angular",
+      "type": "lib",
+      "data": {
+        "root": "packages/toolkit-angular",
+        "sourceRoot": "packages/toolkit-angular",
+        "name": "@muilk/toolkit-angular",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "test",
+              "build",
+              "start",
+              "dev"
+            ]
+          },
+          "description": "> TODO: description"
+        },
+        "targets": {
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "metadata": {
+              "scriptContent": "node ./__tests__/toolkit-angular.test.js",
+              "runCommand": "pnpm run test"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "tsc",
+              "runCommand": "pnpm run build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "start": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "start"
+            },
+            "metadata": {
+              "scriptContent": "ts-node lib/index.ts",
+              "runCommand": "pnpm run start"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "nodemon --exec ts-node lib/index.ts",
+              "runCommand": "pnpm run dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@muilk/core": {
       "name": "@muilk/core",
       "type": "lib",
@@ -1246,9 +1329,9 @@
         "hash": "sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w=="
       }
     },
-    "npm:brace-expansion@1.1.11": {
+    "npm:brace-expansion": {
       "type": "npm",
-      "name": "npm:brace-expansion@1.1.11",
+      "name": "npm:brace-expansion",
       "data": {
         "version": "1.1.11",
         "packageName": "brace-expansion",
@@ -4999,9 +5082,9 @@
         "hash": "sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g=="
       }
     },
-    "npm:semver@7.6.3": {
+    "npm:semver": {
       "type": "npm",
-      "name": "npm:semver@7.6.3",
+      "name": "npm:semver",
       "data": {
         "version": "7.6.3",
         "packageName": "semver",
@@ -6036,6 +6119,38 @@
     }
   },
   "dependencies": {
+    "@muilk/toolkit-angular": [
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:@tsconfig/node18",
+        "type": "static"
+      },
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:@types/node",
+        "type": "static"
+      },
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:nodemon",
+        "type": "static"
+      },
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:ts-node",
+        "type": "static"
+      },
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@muilk/toolkit-angular",
+        "target": "npm:commander",
+        "type": "static"
+      }
+    ],
     "@muilk/core": [
       {
         "source": "@muilk/core",
@@ -6525,7 +6640,7 @@
       },
       {
         "source": "npm:@lerna/create",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -6845,7 +6960,7 @@
       },
       {
         "source": "npm:@npmcli/arborist",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -6867,7 +6982,7 @@
     "npm:@npmcli/fs": [
       {
         "source": "npm:@npmcli/fs",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -6909,7 +7024,7 @@
       },
       {
         "source": "npm:@npmcli/git",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -6975,7 +7090,7 @@
       },
       {
         "source": "npm:@npmcli/metavuln-calculator",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -7012,7 +7127,7 @@
       },
       {
         "source": "npm:@npmcli/package-json",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -7114,7 +7229,7 @@
       },
       {
         "source": "npm:@nx/devkit",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -7608,14 +7723,14 @@
         "type": "static"
       }
     ],
-    "npm:brace-expansion@1.1.11": [
+    "npm:brace-expansion": [
       {
-        "source": "npm:brace-expansion@1.1.11",
+        "source": "npm:brace-expansion",
         "target": "npm:balanced-match",
         "type": "static"
       },
       {
-        "source": "npm:brace-expansion@1.1.11",
+        "source": "npm:brace-expansion",
         "target": "npm:concat-map",
         "type": "static"
       }
@@ -8044,7 +8159,7 @@
       },
       {
         "source": "npm:conventional-changelog-writer",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -8819,7 +8934,7 @@
       },
       {
         "source": "npm:git-semver-tags",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -9089,7 +9204,7 @@
       },
       {
         "source": "npm:init-package-json",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -9657,7 +9772,7 @@
       },
       {
         "source": "npm:lerna",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -9808,7 +9923,7 @@
       },
       {
         "source": "npm:libnpmpublish",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10037,7 +10152,7 @@
     "npm:make-dir@4.0.0": [
       {
         "source": "npm:make-dir@4.0.0",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -10182,14 +10297,14 @@
     "npm:minimatch@3.0.5": [
       {
         "source": "npm:minimatch@3.0.5",
-        "target": "npm:brace-expansion@1.1.11",
+        "target": "npm:brace-expansion",
         "type": "static"
       }
     ],
     "npm:minimatch@3.1.2": [
       {
         "source": "npm:minimatch@3.1.2",
-        "target": "npm:brace-expansion@1.1.11",
+        "target": "npm:brace-expansion",
         "type": "static"
       }
     ],
@@ -10384,7 +10499,7 @@
       },
       {
         "source": "npm:node-gyp",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10426,7 +10541,7 @@
       },
       {
         "source": "npm:nodemon",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10492,7 +10607,7 @@
       },
       {
         "source": "npm:normalize-package-data@3.0.3",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10509,7 +10624,7 @@
       },
       {
         "source": "npm:normalize-package-data@6.0.2",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10528,7 +10643,7 @@
     "npm:npm-install-checks": [
       {
         "source": "npm:npm-install-checks",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -10545,7 +10660,7 @@
       },
       {
         "source": "npm:npm-package-arg",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -10579,7 +10694,7 @@
       },
       {
         "source": "npm:npm-pick-manifest",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],
@@ -10772,7 +10887,7 @@
       },
       {
         "source": "npm:nx",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       },
       {
@@ -11618,7 +11733,7 @@
     "npm:simple-update-notifier": [
       {
         "source": "npm:simple-update-notifier",
-        "target": "npm:semver@7.6.3",
+        "target": "npm:semver",
         "type": "static"
       }
     ],

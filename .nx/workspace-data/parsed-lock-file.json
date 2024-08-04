@@ -1161,9 +1161,9 @@
         "hash": "sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w=="
       }
     },
-    "npm:brace-expansion@1.1.11": {
+    "npm:brace-expansion": {
       "type": "npm",
-      "name": "npm:brace-expansion@1.1.11",
+      "name": "npm:brace-expansion",
       "data": {
         "version": "1.1.11",
         "packageName": "brace-expansion",
@@ -4914,9 +4914,9 @@
         "hash": "sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g=="
       }
     },
-    "npm:semver@7.6.3": {
+    "npm:semver": {
       "type": "npm",
-      "name": "npm:semver@7.6.3",
+      "name": "npm:semver",
       "data": {
         "version": "7.6.3",
         "packageName": "semver",
@@ -6383,7 +6383,7 @@
     },
     {
       "source": "npm:@lerna/create",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6693,7 +6693,7 @@
     },
     {
       "source": "npm:@npmcli/arborist",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6713,7 +6713,7 @@
     },
     {
       "source": "npm:@npmcli/fs",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6753,7 +6753,7 @@
     },
     {
       "source": "npm:@npmcli/git",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6813,7 +6813,7 @@
     },
     {
       "source": "npm:@npmcli/metavuln-calculator",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6848,7 +6848,7 @@
     },
     {
       "source": "npm:@npmcli/package-json",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -6938,7 +6938,7 @@
     },
     {
       "source": "npm:@nx/devkit",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -7362,12 +7362,12 @@
       "type": "static"
     },
     {
-      "source": "npm:brace-expansion@1.1.11",
+      "source": "npm:brace-expansion",
       "target": "npm:balanced-match",
       "type": "static"
     },
     {
-      "source": "npm:brace-expansion@1.1.11",
+      "source": "npm:brace-expansion",
       "target": "npm:concat-map",
       "type": "static"
     },
@@ -7748,7 +7748,7 @@
     },
     {
       "source": "npm:conventional-changelog-writer",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -8433,7 +8433,7 @@
     },
     {
       "source": "npm:git-semver-tags",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -8663,7 +8663,7 @@
     },
     {
       "source": "npm:init-package-json",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9193,7 +9193,7 @@
     },
     {
       "source": "npm:lerna",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9338,7 +9338,7 @@
     },
     {
       "source": "npm:libnpmpublish",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9543,7 +9543,7 @@
     },
     {
       "source": "npm:make-dir@4.0.0",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9678,12 +9678,12 @@
     },
     {
       "source": "npm:minimatch@3.0.5",
-      "target": "npm:brace-expansion@1.1.11",
+      "target": "npm:brace-expansion",
       "type": "static"
     },
     {
       "source": "npm:minimatch@3.1.2",
-      "target": "npm:brace-expansion@1.1.11",
+      "target": "npm:brace-expansion",
       "type": "static"
     },
     {
@@ -9848,7 +9848,7 @@
     },
     {
       "source": "npm:node-gyp",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9888,7 +9888,7 @@
     },
     {
       "source": "npm:nodemon",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9948,7 +9948,7 @@
     },
     {
       "source": "npm:normalize-package-data@3.0.3",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9963,7 +9963,7 @@
     },
     {
       "source": "npm:normalize-package-data@6.0.2",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9978,7 +9978,7 @@
     },
     {
       "source": "npm:npm-install-checks",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -9993,7 +9993,7 @@
     },
     {
       "source": "npm:npm-package-arg",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -10023,7 +10023,7 @@
     },
     {
       "source": "npm:npm-pick-manifest",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -10208,7 +10208,7 @@
     },
     {
       "source": "npm:nx",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {
@@ -10948,7 +10948,7 @@
     },
     {
       "source": "npm:simple-update-notifier",
-      "target": "npm:semver@7.6.3",
+      "target": "npm:semver",
       "type": "static"
     },
     {

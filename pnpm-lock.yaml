@@ -7,7 +7,17 @@ settings:
 importers:
 
   .:
+    dependencies:
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
     devDependencies:
+      '@tsconfig/node18':
+        specifier: ^18.2.4
+        version: 18.2.4
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.0.0
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.8.0)
@@ -20,9 +30,18 @@ importers:
       lint-staged:
         specifier: ^15.2.7
         version: 15.2.7
+      nodemon:
+        specifier: ^3.1.4
+        version: 3.1.4
       prettier:
         specifier: 3.3.3
         version: 3.3.3
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.0.0)(typescript@5.5.4)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
   packages/core:
     dependencies:
@@ -35,6 +54,28 @@ importers:
       commander:
         specifier: ^12.1.0
         version: 12.1.0
+      nodemon:
+        specifier: ^3.1.4
+        version: 3.1.4
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.0.0)(typescript@5.5.4)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
+
+  packages/toolkit-angular:
+    dependencies:
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
+    devDependencies:
+      '@tsconfig/node18':
+        specifier: ^18.2.4
+        version: 18.2.4
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.0.0
       nodemon:
         specifier: ^3.1.4
         version: 3.1.4
