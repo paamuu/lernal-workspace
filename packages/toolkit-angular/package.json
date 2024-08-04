@@ -1,13 +1,11 @@
 {
-  "name": "@muilk/core",
+  "name": "@muilk/toolkit-angular",
   "version": "0.0.6",
   "description": "> TODO: description",
   "author": "pamu <pamu1976@outlook.com>",
   "homepage": "https://github.com/paamuu/lernal-workspace#readme",
   "license": "ISC",
-  "bin": {
-    "muilk": "dist/src/index.js"
-  },
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -20,21 +18,22 @@
     "url": "git+https://github.com/paamuu/lernal-workspace.git"
   },
   "scripts": {
-    "test": "node ./__tests__/core.test.js",
+    "test": "node ./__tests__/toolkit-angular.test.js",
     "build": "tsc",
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon --exec ts-node src/index.ts"
+    "start": "ts-node lib/index.ts",
+    "dev": "nodemon --exec ts-node lib/index.ts"
   },
   "bugs": {
     "url": "https://github.com/paamuu/lernal-workspace/issues"
   },
   "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
     "@tsconfig/node18": "^18.2.4",
     "@types/node": "^22.0.0",
-    "commander": "^12.1.0",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
-  },
-  "gitHead": "81c3b7a0fc9ddf4d515e6f3f514d117849c5f525"
+  }
 }
