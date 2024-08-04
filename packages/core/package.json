@@ -36,8 +36,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
-  "gitHead": "85a19c729fe3c483f3db01f15fa6f848b3592bc8",
+  "gitHead": "223e480a4d0cd0847e6d3f6c3ffb0892e5512b14",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://registry.npmjs.org"
   }
 }
