@@ -25,6 +25,10 @@ jobs:
 
       - name: lerna 构建
         run: npx lerna run build --stream
+
+      - name: Set up npm authentication
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc、
+
       - name: 发布
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
