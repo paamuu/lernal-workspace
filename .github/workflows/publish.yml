@@ -1,0 +1,32 @@
+name: publish
+run-name: 发包npm
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 设置Node.js版本
+        uses: actions/checkout@v4
+        with:
+          node-version: '18.12.0'
+      - name: 安装依赖
+        run: npm install
+      - name: Bootstrap Lerna
+        run: npx lerna bootstrap
+
+      - name: lerna 构建
+        run: npx lerna run build --stream
+
+      - name: 发布
+        run: npx lerna publish from-package --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
