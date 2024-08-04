@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 .nx/cache
+.nx/workspace-data/file-map.json
+.nx/workspace-data/task-history.csv
