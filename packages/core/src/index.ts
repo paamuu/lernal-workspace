@@ -4,7 +4,7 @@ import * as path from 'path';
 import { readdirSync } from 'node:fs';
 
 const program = new Command();
-
+console.log('test');
 //  动态获取其他的内容来添加test
 function register() {
   const pluginPath = path.resolve(__dirname, '../plugins');
