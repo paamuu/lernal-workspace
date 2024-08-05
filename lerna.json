@@ -1,6 +1,13 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "0.0.13",
-  "packages": ["packages/*"],
-  "npmClient": "pnpm"
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "pnpm",
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  }
 }
