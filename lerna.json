@@ -4,10 +4,5 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "pnpm",
-  "command": {
-    "bootstrap": {
-      "hoist": true
-    }
-  }
+  "npmClient": "pnpm"
 }
