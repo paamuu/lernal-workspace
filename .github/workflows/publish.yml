@@ -29,6 +29,8 @@ jobs:
 
       - name: lerna 构建
         run: npx lerna run build --stream
+      - name: 设置npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: 发布
         env:
