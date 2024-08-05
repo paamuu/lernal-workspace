@@ -29,6 +29,6 @@ jobs:
       - name: 发布
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx lerna publish --loglevel=verbose --canary --exact --force-publish --yes
+        run: npx lerna publish --loglevel=verbose --canary --exact --no-private --yes
 
 
