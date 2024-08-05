@@ -6122,67 +6122,11 @@
     "@muilk/toolkit-angular": [
       {
         "source": "@muilk/toolkit-angular",
-        "target": "npm:@tsconfig/node18",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/toolkit-angular",
-        "target": "npm:@types/node",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/toolkit-angular",
-        "target": "npm:nodemon",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/toolkit-angular",
-        "target": "npm:ts-node",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/toolkit-angular",
-        "target": "npm:typescript",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/toolkit-angular",
         "target": "npm:commander",
         "type": "static"
       }
     ],
-    "@muilk/core": [
-      {
-        "source": "@muilk/core",
-        "target": "npm:@tsconfig/node18",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/core",
-        "target": "npm:@types/node",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/core",
-        "target": "npm:commander",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/core",
-        "target": "npm:nodemon",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/core",
-        "target": "npm:ts-node",
-        "type": "static"
-      },
-      {
-        "source": "@muilk/core",
-        "target": "npm:typescript",
-        "type": "static"
-      }
-    ],
+    "@muilk/core": [],
     "npm:@babel/code-frame": [
       {
         "source": "npm:@babel/code-frame",

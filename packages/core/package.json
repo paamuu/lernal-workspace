@@ -28,14 +28,6 @@
   "bugs": {
     "url": "https://github.com/paamuu/lernal-workspace/issues"
   },
-  "dependencies": {
-    "@tsconfig/node18": "^18.2.4",
-    "@types/node": "^22.0.0",
-    "commander": "^12.1.0",
-    "nodemon": "^3.1.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
-  },
   "gitHead": "ebe84258674075853a9e2df18c08423d5cd595db",
   "publishConfig": {
     "access": "public"
