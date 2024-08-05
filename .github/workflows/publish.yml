@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -29,12 +27,12 @@ jobs:
 
       - name: lerna 构建
         run: npx lerna run build --stream
-      - name: 设置npmrc
+      - name: 设置npmrc # 必须配置否则lerna发布失败
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: 发布
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # 必须配置否则lerna发布失败
         run: npx lerna publish --loglevel=verbose --canary --exact --no-private --yes
 
 
