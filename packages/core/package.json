@@ -36,7 +36,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
-  "gitHead": "f61988ee977d88033da6d92372361ad71ef1cfb8",
+  "gitHead": "ebe84258674075853a9e2df18c08423d5cd595db",
   "publishConfig": {
     "access": "public"
   }
