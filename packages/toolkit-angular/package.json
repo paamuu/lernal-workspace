@@ -1,6 +1,6 @@
 {
   "name": "@muilk/toolkit-angular",
-  "version": "0.0.12",
+  "version": "0.0.11-alpha.7+f61988e",
   "description": "> TODO: description",
   "author": "pamu <pamu1976@outlook.com>",
   "homepage": "https://github.com/paamuu/lernal-workspace#readme",
@@ -39,5 +39,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e09feb6a11c136b1925f58711fb5c9c4ecd196d1"
+  "gitHead": "f61988ee977d88033da6d92372361ad71ef1cfb8"
 }
