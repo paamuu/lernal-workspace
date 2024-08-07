@@ -33,6 +33,6 @@ jobs:
       - name: 发布
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # 必须配置否则lerna发布失败
-        run: npx lerna publish --loglevel=verbose --canary --exact --no-private --yes from-package
+        run: npx lerna publish --loglevel=verbose --exact --no-private --yes from-package
 
 
