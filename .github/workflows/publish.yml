@@ -25,6 +25,9 @@ jobs:
       - name: 安装依赖
         run: pnpm install
 
+      - name: Bootstrap Lerna # 解析项目之间的依赖关系
+        run: npx lerna bootstrap
+
       - name: lerna 构建
         run: npx lerna run build --stream
       - name: 设置npmrc # 必须配置否则lerna发布失败
