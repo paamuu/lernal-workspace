@@ -1,11 +1,12 @@
 {
-  "name": "@muilk/toolkit-angular",
+  "name": "@muilk/schematics",
   "version": "0.0.14",
   "description": "> TODO: description",
   "author": "pamu <pamu1976@outlook.com>",
   "homepage": "https://github.com/paamuu/lernal-workspace#readme",
   "license": "ISC",
   "main": "dist/index.js",
+  "schematics": "./dist/collection.json",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -26,8 +27,12 @@
   "bugs": {
     "url": "https://github.com/paamuu/lernal-workspace/issues"
   },
+  "dependencies": {
+    "@angular-devkit/core": "18.2.0",
+    "@angular-devkit/schematics": "18.2.0",
+    "@angular-devkit/schematics-cli": "18.2.0"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "ebe84258674075853a9e2df18c08423d5cd595db"
+  }
 }
