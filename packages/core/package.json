@@ -16,7 +16,6 @@
     "lib"
   ],
   "dependencies": {
-    "@muilk/toolkit-angular": "^0.0.14"
   },
   "repository": {
     "type": "git",
