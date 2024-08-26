@@ -11,6 +11,6 @@ export function main(options: ApplicationOptions): Rule {
     !options.directory || options.directory === 'undefined'
       ? options.name
       : options.directory;
-  return mergeWith(generate(options, path));
+  return noop();
 }
 

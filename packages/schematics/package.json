@@ -20,9 +20,11 @@
   },
   "scripts": {
     "test": "node ./__tests__/toolkit-angular.test.js",
-    "build": "tsc",
+    "build": "npm run clean && npm run copy:collection && tsc",
     "start": "ts-node lib/index.ts",
-    "dev": "nodemon --exec ts-node lib/index.ts"
+    "dev": "nodemon --exec ts-node lib/index.ts",
+    "copy:collection": "cpx lib/collection.json dist && cpx lib/**/schema.json dist/",
+    "clean": "rimraf dist"
   },
   "bugs": {
     "url": "https://github.com/paamuu/lernal-workspace/issues"
@@ -34,5 +36,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "cpx2": "^7.0.1",
+    "rimraf": "^6.0.1"
   }
 }
