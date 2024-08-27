@@ -27,7 +27,7 @@ function execute() {
 function getSchematicExecutePath() {
   return require.resolve(
     '@angular-devkit/schematics-cli/bin/schematics.js',
-    { paths: this.getModulePaths() },
+    { paths: getModulePaths() },
   );
 }
 
