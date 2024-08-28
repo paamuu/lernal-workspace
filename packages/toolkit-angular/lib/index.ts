@@ -1,1 +1,5 @@
-console.log('testsdfasdf');
+import { execute } from './schematic.runner';
+
+
+execute();
+

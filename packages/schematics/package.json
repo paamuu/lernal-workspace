@@ -20,10 +20,11 @@
   },
   "scripts": {
     "test": "node ./__tests__/toolkit-angular.test.js",
-    "build": "npm run clean && npm run copy:collection && tsc",
+    "build": "npm run clean && npm run copy:collection && npm run copy:template && tsc",
     "start": "ts-node lib/index.ts",
     "dev": "nodemon --exec ts-node lib/index.ts",
     "copy:collection": "cpx lib/collection.json dist && cpx lib/**/schema.json dist/",
+    "copy:template": "cpx lib/**/files/** dist/",
     "clean": "rimraf dist"
   },
   "bugs": {

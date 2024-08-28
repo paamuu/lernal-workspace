@@ -1,5 +1,6 @@
 import { ChildProcess, spawn, SpawnOptions } from 'child_process';
 
+
 function execute() {
   const options: SpawnOptions = {
     cwd: process.cwd(),
@@ -7,9 +8,12 @@ function execute() {
     shell: true,
   };
   const schematic = getSchematicExecutePath();
+  console.log(schematic, '命令');
+  // '--list-schematics'
+  const args = ['@muilk/schematics:application', '--dry-run', 'false'];
   const child: ChildProcess = spawn(
     `node`,
-    [schematic],
+    [schematic, ...args],
     options,
   );
   child.on('close', (code) => {
@@ -34,3 +38,7 @@ function getSchematicExecutePath() {
 function getModulePaths() {
   return module.paths;
 }
+
+export {
+  execute,
+};

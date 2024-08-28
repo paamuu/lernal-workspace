@@ -11,6 +11,19 @@ export function main(options: ApplicationOptions): Rule {
     !options.directory || options.directory === 'undefined'
       ? options.name
       : options.directory;
-  return noop();
+  return mergeWith(generate(options, ''));
 }
 
+function generate(options: ApplicationOptions, path = ''): Source {
+  return apply(url(join('./files' as Path, path)), [
+    filter((path) => {
+      console.log(path, 'path');
+      return !!path.length;
+    }),
+    template({
+      ...strings,
+      ...options,
+    }),
+    move(path),
+  ]);
+}
