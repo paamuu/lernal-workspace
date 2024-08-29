@@ -11,11 +11,14 @@ export function main(options: ApplicationOptions): Rule {
     !options.directory || options.directory === 'undefined'
       ? options.name
       : options.directory;
-  return mergeWith(generate(options, ''));
+  options.description = '描述信息';
+  options.strict = false;
+  options.style = 'less';
+  return mergeWith(generate(options, options.name));
 }
 
 function generate(options: ApplicationOptions, path = ''): Source {
-  return apply(url(join('./files' as Path, path)), [
+  return apply(url(join('./files' as Path, '')), [
     filter((path) => {
       console.log(path, 'path');
       return !!path.length;
@@ -24,6 +27,6 @@ function generate(options: ApplicationOptions, path = ''): Source {
       ...strings,
       ...options,
     }),
-    move(path),
+    move(path), // 移动到指定目录，根据命令所执行的命令下的path
   ]);
 }

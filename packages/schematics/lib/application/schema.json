@@ -69,6 +69,10 @@
       "type": "string",
       "default": "spec",
       "description": "Specifies the file suffix of spec files."
+    },
+    "style": {
+      "type": "string",
+      "description": "Nest application language."
     }
   },
   "required": [

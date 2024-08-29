@@ -9,7 +9,7 @@ function execute() {
   };
   const schematic = getSchematicExecutePath();
   console.log(schematic, '命令');
-  // '--list-schematics'
+  // '--list-schematics' 列出所有的schematic,'--no-interactive' 没有交互框
   const args = ['@muilk/schematics:application', '--dry-run', 'false'];
   const child: ChildProcess = spawn(
     `node`,
